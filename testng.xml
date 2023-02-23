@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Boyka API Test Suite">
+    <test name="Restful Booker tests">
+        <classes>
+            <class name="io.github.mfaislakhatri.tests.RestfulBookerEndToEndTests">
+                <methods>
+                    <include name="testCreateBooking"/>
+                    <include name="testGetBooking"/>
+                    <include name="testUpdateBooking"/>
+                    <include name="testUpdatePartialBooking"/>
+                    <include name="testDeleteBooking"/>
+                    <include name="testDeletedBooking"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
