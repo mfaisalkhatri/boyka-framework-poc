@@ -22,13 +22,9 @@ public class HomePageActions {
         navigate ().to (websiteLink);
     }
 
-    public void navigateToCreateAccountPage () {
+    public static void navigateToCreateAccountPage () {
         withMouse (homePage ().getAccountLink ()).click ();
         withMouse (homePage ().getRegisterLink ()).click ();
-    }
-
-    public static HomePageActions homePageActions () {
-        return new HomePageActions ();
     }
 
     public static boolean isLogoutLinkDisplayed () {

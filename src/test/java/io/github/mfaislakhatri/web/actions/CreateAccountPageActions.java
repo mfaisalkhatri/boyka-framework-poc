@@ -2,10 +2,9 @@ package io.github.mfaislakhatri.web.actions;
 
 import static com.github.wasiqb.boyka.actions.elements.ClickableActions.withMouse;
 import static com.github.wasiqb.boyka.actions.elements.TextBoxActions.onTextBox;
-import static io.github.mfaislakhatri.web.actions.HomePageActions.homePageActions;
+import static io.github.mfaislakhatri.web.actions.HomePageActions.navigateToCreateAccountPage;
 import static io.github.mfaislakhatri.web.pages.CreateAccountPage.createAccountPage;
 
-import lombok.Getter;
 import net.datafaker.Faker;
 
 /**
@@ -14,11 +13,8 @@ import net.datafaker.Faker;
  **/
 public class CreateAccountPageActions {
 
-    public static CreateAccountPageActions createAccountPageActions () {
-        return new CreateAccountPageActions ();
-    }
     public static void registerUser () {
-        homePageActions ().navigateToCreateAccountPage ();
+        navigateToCreateAccountPage ();
 
         Faker faker = new Faker ();
         onTextBox (createAccountPage ().getFirstNameField ()).enterText (faker.name ()
