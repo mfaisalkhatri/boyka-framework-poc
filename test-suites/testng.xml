@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Boyka API Test Suite">
+    <suite-files>
+        <suite-file path="testng-api.xml"/>
+        <suite-file path="testng-web.xml"/>
+    </suite-files>
+</suite>

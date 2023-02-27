@@ -2,7 +2,7 @@
 <suite name="Boyka API Test Suite">
     <test name="Restful Booker tests">
         <classes>
-            <class name="io.github.mfaislakhatri.tests.RestfulBookerEndToEndTests">
+            <class name="io.github.mfaislakhatri.api.tests.RestfulBookerEndToEndTests">
                 <methods>
                     <include name="testCreateBooking"/>
                     <include name="testGetBooking"/>
