@@ -1,4 +1,4 @@
-package io.github.mfaislakhatri.requests;
+package io.github.mfaislakhatri.api.requests;
 
 public class TokenBuilder {
     public Tokencreds tokenBuilder () {

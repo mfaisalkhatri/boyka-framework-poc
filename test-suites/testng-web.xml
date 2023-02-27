@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Boyka API Test Suite" parallel="tests" thread-count="5">
+    <test name="Tealium Web Automation tests on Chrome Browser">
+        <parameter name="platformType" value="WEB"/>
+        <parameter name="configKey" value="test_local_chrome"/>
+        <classes>
+            <class name="io.github.mfaislakhatri.web.tests.TealiumWebSiteTests">
+                <methods>
+                    <include name="testTealiumHomepage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Tealium Web Automation tests on Firefox Browser">
+        <parameter name="platformType" value="WEB"/>
+        <parameter name="configKey" value="test_local_firefox"/>
+        <classes>
+            <class name="io.github.mfaislakhatri.web.tests.TealiumWebSiteTests">
+                <methods>
+                    <include name="testTealiumHomepage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Tealium Web Automation tests on Edge Browser">
+        <parameter name="platformType" value="WEB"/>
+        <parameter name="configKey" value="test_local_edge"/>
+        <classes>
+            <class name="io.github.mfaislakhatri.web.tests.TealiumWebSiteTests">
+                <methods>
+                    <include name="testTealiumHomepage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

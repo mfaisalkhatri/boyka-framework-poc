@@ -1,9 +1,9 @@
-package io.github.mfaislakhatri.tests;
+package io.github.mfaislakhatri.api.tests;
 
-import io.github.mfaislakhatri.requests.BookingData;
-import io.github.mfaislakhatri.requests.BookingDataBuilder;
-import io.github.mfaislakhatri.requests.BookingRequest;
-import io.github.mfaislakhatri.requests.PartialBookingData;
+import io.github.mfaislakhatri.api.requests.BookingData;
+import io.github.mfaislakhatri.api.requests.BookingDataBuilder;
+import io.github.mfaislakhatri.api.requests.BookingRequest;
+import io.github.mfaislakhatri.api.requests.PartialBookingData;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 

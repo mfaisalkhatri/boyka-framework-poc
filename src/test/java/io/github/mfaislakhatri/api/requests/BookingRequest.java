@@ -1,4 +1,4 @@
-package io.github.mfaislakhatri.requests;
+package io.github.mfaislakhatri.api.requests;
 
 import com.github.wasiqb.boyka.builders.ApiRequest;
 import com.github.wasiqb.boyka.enums.RequestMethod;

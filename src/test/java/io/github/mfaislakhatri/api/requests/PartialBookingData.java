@@ -1,4 +1,4 @@
-package io.github.mfaislakhatri.requests;
+package io.github.mfaislakhatri.api.requests;
 
 
 import lombok.Builder;
