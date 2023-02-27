@@ -41,7 +41,7 @@ public class CreateAccountPage {
 
     private final Locator registerBtn = Locator.buildLocator ()
         .name ("Register Button")
-        .web (By.cssSelector (".buttons-set > button"))
+        .web (By.cssSelector ("div.buttons-set > button"))
         .build ();
 
     public static CreateAccountPage createAccountPage () {

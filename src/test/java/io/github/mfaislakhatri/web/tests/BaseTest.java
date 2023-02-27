@@ -23,6 +23,7 @@ public class BaseTest {
 
     @AfterTest
     public void tearDown () {
+
         closeDriver ();
     }
 }

@@ -15,18 +15,15 @@
     "web": {
       "test_local_chrome": {
         "browser": "CHROME",
-        "headless": false,
-        "resize": "CUSTOM"
+        "headless": false
       },
       "test_local_firefox": {
         "browser": "FIREFOX",
-        "headless": false,
-        "resize": "CUSTOM"
+        "headless": false
       },
       "test_local_edge": {
         "browser": "EDGE",
-        "headless": false,
-        "resize": "CUSTOM"
+        "headless": false
       },
       "test_lambda_test_chrome": {
         "browser": "REMOTE",

@@ -12,24 +12,26 @@
             </class>
         </classes>
     </test>
-    <test name="Tealium Web Automation tests on Firefox Browser" enabled="false">
+    <test name="Tealium Web Automation tests on Firefox Browser" >
         <parameter name="platformType" value="WEB"/>
         <parameter name="configKey" value="test_local_firefox"/>
         <classes>
             <class name="io.github.mfaislakhatri.web.tests.TealiumWebSiteTests">
                 <methods>
                     <include name="testTealiumHomepage"/>
+                    <include name="testRegisterUser"/>
                 </methods>
             </class>
         </classes>
     </test>
-    <test name="Tealium Web Automation tests on Edge Browser" enabled="false">
+    <test name="Tealium Web Automation tests on Edge Browser" >
         <parameter name="platformType" value="WEB"/>
         <parameter name="configKey" value="test_local_edge"/>
         <classes>
             <class name="io.github.mfaislakhatri.web.tests.TealiumWebSiteTests">
                 <methods>
                     <include name="testTealiumHomepage"/>
+                    <include name="testRegisterUser"/>
                 </methods>
             </class>
         </classes>
