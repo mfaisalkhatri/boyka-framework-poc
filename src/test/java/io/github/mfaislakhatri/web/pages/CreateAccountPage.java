@@ -1,6 +1,7 @@
 package io.github.mfaislakhatri.web.pages;
 
 import com.github.wasiqb.boyka.builders.Locator;
+import io.github.mfaislakhatri.web.actions.MyDashboardPageActions;
 import lombok.Getter;
 import org.openqa.selenium.By;
 
@@ -44,6 +45,8 @@ public class CreateAccountPage {
         .web (By.cssSelector (".buttons-set > button"))
         .build ();
 
-
+    public static CreateAccountPage createAccountPage () {
+        return new CreateAccountPage();
+    }
 
 }

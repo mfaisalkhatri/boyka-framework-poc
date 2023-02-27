@@ -22,11 +22,16 @@ public class HomePage {
 
     private final Locator accountLink = Locator.buildLocator ()
         .name ("Account link")
-        .web (By.linkText ("Account"))
+        .web (By.linkText ("ACCOUNT"))
         .build ();
 
     private final Locator RegisterLink = Locator.buildLocator ()
         .name ("Register Link")
         .web (By.linkText ("Register"))
+        .build ();
+
+    private final Locator logOutLink = Locator.buildLocator ()
+        .name ("Log out link")
+        .web (By.linkText ("Log Out"))
         .build ();
 }

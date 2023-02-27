@@ -2,12 +2,16 @@ package io.github.mfaislakhatri.web.actions;
 
 import static com.github.wasiqb.boyka.actions.drivers.NavigateActions.navigate;
 import static com.github.wasiqb.boyka.actions.elements.ClickableActions.withMouse;
+import static com.github.wasiqb.boyka.actions.elements.ElementActions.onElement;
 import static io.github.mfaislakhatri.web.pages.HomePage.homePage;
+
+import lombok.Getter;
 
 /**
  * @author Faisal Khatri
  * @since 2/27/2023
  **/
+@Getter
 public class HomePageActions {
 
     public static String getAltTextOfLogo () {
@@ -18,10 +22,17 @@ public class HomePageActions {
         navigate ().to (websiteLink);
     }
 
-    public CreateAccountPageActions navigateToCreateAccountPage() {
+    public void navigateToCreateAccountPage () {
         withMouse (homePage ().getAccountLink ()).click ();
         withMouse (homePage ().getRegisterLink ()).click ();
-        return new CreateAccountPageActions();
     }
 
+    public static HomePageActions homePageActions () {
+        return new HomePageActions ();
+    }
+
+    public static boolean isLogoutLinkDisplayed () {
+        withMouse (homePage ().getAccountLink ()).click ();
+        return onElement (homePage ().getLogOutLink ()).isDisplayed ();
+    }
 }
