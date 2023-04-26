@@ -1,4 +1,4 @@
-package io.github.mfaislakhatri.web.tests;
+package io.github.mfaisalkhatri.web.tests;
 
 import static com.github.wasiqb.boyka.manager.DriverManager.closeDriver;
 import static com.github.wasiqb.boyka.manager.DriverManager.createDriver;
@@ -23,7 +23,6 @@ public class BaseTest {
 
     @AfterTest
     public void tearDown () {
-
         closeDriver ();
     }
 }

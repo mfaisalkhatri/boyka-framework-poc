@@ -1,9 +1,9 @@
-package io.github.mfaislakhatri.web.actions;
+package io.github.mfaisalkhatri.web.actions;
 
 import static com.github.wasiqb.boyka.actions.drivers.NavigateActions.navigate;
 import static com.github.wasiqb.boyka.actions.elements.ClickableActions.withMouse;
 import static com.github.wasiqb.boyka.actions.elements.ElementActions.onElement;
-import static io.github.mfaislakhatri.web.pages.HomePage.homePage;
+import static io.github.mfaisalkhatri.web.pages.HomePage.homePage;
 
 import lombok.Getter;
 

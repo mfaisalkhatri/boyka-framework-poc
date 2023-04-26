@@ -1,4 +1,4 @@
-package io.github.mfaislakhatri.web.pages;
+package io.github.mfaisalkhatri.web.pages;
 
 import com.github.wasiqb.boyka.builders.Locator;
 import lombok.Getter;
