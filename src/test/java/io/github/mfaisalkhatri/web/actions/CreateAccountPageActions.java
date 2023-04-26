@@ -1,10 +1,10 @@
-package io.github.mfaislakhatri.web.actions;
+package io.github.mfaisalkhatri.web.actions;
 
 import static com.github.wasiqb.boyka.actions.drivers.DriverActions.withDriver;
 import static com.github.wasiqb.boyka.actions.elements.ClickableActions.withMouse;
 import static com.github.wasiqb.boyka.actions.elements.TextBoxActions.onTextBox;
-import static io.github.mfaislakhatri.web.actions.HomePageActions.navigateToCreateAccountPage;
-import static io.github.mfaislakhatri.web.pages.CreateAccountPage.createAccountPage;
+import static io.github.mfaisalkhatri.web.actions.HomePageActions.navigateToCreateAccountPage;
+import static io.github.mfaisalkhatri.web.pages.CreateAccountPage.createAccountPage;
 
 import com.github.wasiqb.boyka.actions.elements.ElementFinder;
 import com.github.wasiqb.boyka.enums.WaitStrategy;

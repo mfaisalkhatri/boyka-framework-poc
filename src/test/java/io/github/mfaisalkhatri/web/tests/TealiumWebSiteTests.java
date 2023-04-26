@@ -1,9 +1,9 @@
-package io.github.mfaislakhatri.web.tests;
+package io.github.mfaisalkhatri.web.tests;
 
-import static io.github.mfaislakhatri.web.actions.CreateAccountPageActions.registerUser;
-import static io.github.mfaislakhatri.web.actions.HomePageActions.getAltTextOfLogo;
-import static io.github.mfaislakhatri.web.actions.HomePageActions.openWebsite;
-import static io.github.mfaislakhatri.web.actions.MyDashboardPageActions.getRegisteredMessageText;
+import static io.github.mfaisalkhatri.web.actions.CreateAccountPageActions.registerUser;
+import static io.github.mfaisalkhatri.web.actions.HomePageActions.getAltTextOfLogo;
+import static io.github.mfaisalkhatri.web.actions.HomePageActions.openWebsite;
+import static io.github.mfaisalkhatri.web.actions.MyDashboardPageActions.getRegisteredMessageText;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.BeforeClass;

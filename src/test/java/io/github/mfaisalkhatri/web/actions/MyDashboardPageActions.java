@@ -1,7 +1,7 @@
-package io.github.mfaislakhatri.web.actions;
+package io.github.mfaisalkhatri.web.actions;
 
 import static com.github.wasiqb.boyka.actions.elements.ElementActions.onElement;
-import static io.github.mfaislakhatri.web.pages.MyDashboardPage.myDashboardPage;
+import static io.github.mfaisalkhatri.web.pages.MyDashboardPage.myDashboardPage;
 
 /**
  * @author Faisal Khatri
