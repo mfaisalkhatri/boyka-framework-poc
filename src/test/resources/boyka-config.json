@@ -15,16 +15,22 @@
     "web": {
       "test_local_chrome": {
         "browser": "CHROME",
-        "headless": false
-      },
+        "headless": false,
+        "browser_options": [
+          "--remote-allow-origins=*"
+        ]
+    },
       "test_local_firefox": {
         "browser": "FIREFOX",
         "headless": false
       },
       "test_local_edge": {
         "browser": "EDGE",
-        "headless": false
-      },
+        "headless": false,
+        "browser_options": [
+          "--remote-allow-origins=*"
+        ]
+  },
       "test_lambda_test_chrome": {
         "browser": "REMOTE",
         "cloud": "LAMBDA_TEST",
