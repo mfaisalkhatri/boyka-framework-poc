@@ -9,11 +9,9 @@ import com.github.wasiqb.boyka.enums.RequestMethod;
 
 public class BookingRequest {
 
-    private static final String API_CONFIG_KEY = "test_restfulbooker";
-
     public static ApiRequest createBooking (Object requestBody) {
 
-        return createRequest ().configKey (API_CONFIG_KEY)
+        return createRequest ()
             .method (RequestMethod.POST)
             .header ("Accept", "application/json")
             .path ("/booking")
@@ -22,7 +20,7 @@ public class BookingRequest {
     }
 
     public static ApiRequest getBooking (String id) {
-        return createRequest ().configKey (API_CONFIG_KEY)
+        return createRequest ()
             .method (RequestMethod.GET)
             .header ("Accept", "application/json")
             .path ("/booking/${id}")
@@ -31,7 +29,7 @@ public class BookingRequest {
     }
 
     public static ApiRequest updateBooking (String id, Object requestBody) {
-        return createRequest ().configKey (API_CONFIG_KEY)
+        return createRequest ()
             .method (RequestMethod.PUT)
             .header ("Accept", "application/json")
             .header ("Cookie", format ("token={0}", generateToken ()))
@@ -43,7 +41,7 @@ public class BookingRequest {
 
     private static String generateToken () {
         TokenBuilder builder = new TokenBuilder ();
-        var generateTokenRequest = createRequest ().configKey (API_CONFIG_KEY)
+        var generateTokenRequest = createRequest ()
             .header ("Accept", "application/json")
             .method (RequestMethod.POST)
             .path ("/auth")
@@ -55,7 +53,7 @@ public class BookingRequest {
     }
 
     public static ApiRequest updatePartialBooking (String id, Object requestBody) {
-        return createRequest ().configKey (API_CONFIG_KEY)
+        return createRequest ()
             .method (RequestMethod.PATCH)
             .header ("Accept", "application/json")
             .header ("Cookie", format ("token={0}", generateToken ()))
@@ -66,7 +64,7 @@ public class BookingRequest {
     }
 
     public static ApiRequest deleteBooking (String id) {
-        return createRequest ().configKey (API_CONFIG_KEY)
+        return createRequest ()
             .method (RequestMethod.DELETE)
             .header ("Content-Type", "application/json")
             .header ("Cookie", format ("token={0}", generateToken ()))

@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Boyka API Test Suite" parallel="tests" thread-count="5">
+<suite name="Boyka Web Test Suite" parallel="tests">
     <test name="Tealium Web Automation tests on Chrome Browser">
         <parameter name="platformType" value="WEB"/>
         <parameter name="configKey" value="test_local_chrome"/>

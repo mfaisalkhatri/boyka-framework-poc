@@ -12,12 +12,12 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <boyka-framework-version>0.14.0</boyka-framework-version>
+    <boyka-framework-version>0.14.1</boyka-framework-version>
     <testng-version>7.7.1</testng-version>
     <lombok-version>1.18.26</lombok-version>
     <data-faker-version>1.9.0</data-faker-version>
-    <maven.compiler.version>3.10.1</maven.compiler.version>
-    <surefire-version>3.0.0-M8</surefire-version>
+    <maven.compiler.version>3.11.0</maven.compiler.version>
+    <surefire-version>3.0.0</surefire-version>
     <java.release.version>11</java.release.version>
     <maven.source.encoding>UTF-8</maven.source.encoding>
     <suite-xml>test-suites/testng.xml</suite-xml>
